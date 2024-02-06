@@ -1,6 +1,7 @@
-# Svelte + Vite
+# Thank you to the libraries:
 
-This template should help get you started developing with Svelte in Vite.
+Calendar by vkurko
+https://github.com/vkurko/calendar?tab=readme-ov-file#svelte-component--es6-module
 
 ## Recommended IDE Setup
 

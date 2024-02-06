@@ -2,7 +2,13 @@
   import svelteLogo from './assets/svelte.svg'
   import viteLogo from '/vite.svg'
   import Counter from './lib/Counter.svelte'
+  import Calendar from './lib/Calendar.svelte'
 </script>
+
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@event-calendar/build@2.6.1/event-calendar.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@event-calendar/build@2.6.1/event-calendar.min.js"></script>
+</head>
 
 <main>
   <div>
@@ -15,6 +21,8 @@
   </div>
   <h1>Vite + Svelte</h1>
 
+  <Calendar />
+
   <div class="card">
     <Counter />
   </div>
@@ -24,7 +32,7 @@
   </p>
 
   <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
+    Hello World!
   </p>
 </main>
 
