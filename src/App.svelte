@@ -18,7 +18,7 @@
     </a>
   </div>
   <h1>Harvard  Time</h1>
- <label> Preferred Buffer Time: </label>
+ <label>Preferred Buffer Time: </label>
  <label>
 	<input type="radio" bind:group={buffer} value={0} />
 	0 Minutes
