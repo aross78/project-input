@@ -13,7 +13,12 @@
 </head>
 
 <main>
- <h1> Time Scheduler</h1>
+  <div>
+    <a href="https://github.com/aross78/project-input">
+      <img src="src\assets\harvard_time_logo.png" class="logo" alt="Harvard Time Logo" />
+    </a>
+  </div>
+  <h1>Harvard  Time</h1>
  <div style = "width:40%; height: 30%; float:left;">
  <label> Preferred Buffer Time: </label>
  <label>
