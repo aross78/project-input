@@ -13,9 +13,19 @@
 </head>
 
 <main>
+<<<<<<< HEAD
  <h1> Time Scheduler</h1>
  <div style = "width:40%; height:30%; float:left;">
  <label> Preferred Buffer Time: </label>
+=======
+  <div>
+    <a href="https://github.com/aross78/project-input">
+      <img src="src\assets\harvard_time_logo.png" class="logo" alt="Harvard Time Logo" />
+    </a>
+  </div>
+  <h1>Harvard  Time</h1>
+ <label>Preferred Buffer Time: </label>
+>>>>>>> 97961c71283007d2d5f0c4bd981c64de3a75498a
  <label>
 	<input type="radio" bind:group={buffer} value={0} />
 	0 Minutes
@@ -37,6 +47,7 @@
     <Counter />
   </div>
 
+<<<<<<< HEAD
   </div>
 
  
@@ -44,10 +55,23 @@
     <h2> Group Availability</h2>
 <Output />
 </div>
+=======
+>>>>>>> 97961c71283007d2d5f0c4bd981c64de3a75498a
 </main>
 
 <style>
-
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #6e1010);
+  }
+  .logo.svelte:hover {
+    filter: drop-shadow(0 0 2em #ff3e00aa);
+  }
   .read-the-docs {
     color: #888;
   }

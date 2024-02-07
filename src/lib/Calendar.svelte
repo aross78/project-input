@@ -17,5 +17,4 @@
     }
 </script>
 
-<button on:click={updateOptions}>Change slot duration</button>
 <Calendar {plugins} {options} />
