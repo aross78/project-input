@@ -2,6 +2,8 @@
   import Counter from './lib/Counter.svelte'
   import Calendar from './lib/Calendar.svelte'
 
+  let buffer = 1;
+
 </script>
 
 <head>
@@ -11,6 +13,22 @@
 
 <main>
  <h1> Time Scheduler</h1>
+ <label> Preferred Buffer Time: </label>
+ <label>
+	<input type="radio" bind:group={buffer} value={0} />
+	0 Minutes
+</label>
+
+<label>
+	<input type="radio" bind:group={buffer} value={15} />
+	15 Minutes
+</label>
+
+<label>
+	<input type="radio" bind:group={buffer} value={30} />
+	30 Minutes
+</label>
+
   <Calendar />
 
   <div class="card">
