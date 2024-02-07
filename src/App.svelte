@@ -14,7 +14,7 @@
 
 <main>
  <h1> Time Scheduler</h1>
- <div style = "width:40%; height:30%; float:left;">
+ <div style = "width:40%; height: 30%; float:left;">
  <label> Preferred Buffer Time: </label>
  <label>
 	<input type="radio" bind:group={buffer} value={0} />
@@ -33,7 +33,11 @@
 
   <Calendar />
 
-  <div class="card">
+  </div>
+
+  <div style= "float:right;">
+    <h2 style = "color:cadetblue"> Group Availability</h2>
+    <Output />
     <Counter />
   </div>
 
