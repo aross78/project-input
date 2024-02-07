@@ -1,6 +1,7 @@
 <script>
   import Counter from './lib/Counter.svelte'
   import Calendar from './lib/Calendar.svelte'
+  import Output from './lib/Output.svelte'
 
   let buffer = 1;
 
@@ -13,6 +14,7 @@
 
 <main>
  <h1> Time Scheduler</h1>
+ <div style = "width:40%; height:30%; float:left;">
  <label> Preferred Buffer Time: </label>
  <label>
 	<input type="radio" bind:group={buffer} value={0} />
@@ -35,13 +37,13 @@
     <Counter />
   </div>
 
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
+  </div>
 
-  <p class="read-the-docs">
-    Hello World!
-  </p>
+ 
+  <div style = "float:right;">
+    <h2> Group Availability</h2>
+<Output />
+</div>
 </main>
 
 <style>
