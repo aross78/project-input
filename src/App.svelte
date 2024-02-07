@@ -1,6 +1,4 @@
 <script>
-  import svelteLogo from './assets/svelte.svg'
-  import viteLogo from '/vite.svg'
   import Counter from './lib/Counter.svelte'
   import Calendar from './lib/Calendar.svelte'
 
@@ -13,14 +11,11 @@
 
 <main>
   <div>
-    <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-      <img src={viteLogo} class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
+    <a href="https://github.com/aross78/project-input">
+      <img src="src\assets\harvard_time_logo.png" class="logo" alt="Harvard Time Logo" />
     </a>
   </div>
-  <h1>Vite + Svelte</h1>
+  <h1>Harvard  Time</h1>
 
   <Calendar />
 
@@ -45,7 +40,7 @@
     transition: filter 300ms;
   }
   .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+    filter: drop-shadow(0 0 2em #6e1010);
   }
   .logo.svelte:hover {
     filter: drop-shadow(0 0 2em #ff3e00aa);
