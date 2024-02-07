@@ -4,7 +4,6 @@
     import Interaction from '@event-calendar/interaction'
 
     let plugins = [TimeGrid, Interaction];
-    let plugins = [TimeGrid, Interaction];
     let options = {
         view: 'timeGridWeek',
         selectable: 'true',
