@@ -2,6 +2,8 @@
   import Counter from './lib/Counter.svelte'
   import Calendar from './lib/Calendar.svelte'
 
+  let buffer = 1;
+
 </script>
 
 <head>
@@ -10,12 +12,31 @@
 </head>
 
 <main>
+<<<<<<< HEAD
   <div>
     <a href="https://github.com/aross78/project-input">
       <img src="src\assets\harvard_time_logo.png" class="logo" alt="Harvard Time Logo" />
     </a>
   </div>
   <h1>Harvard  Time</h1>
+=======
+ <h1> Time Scheduler</h1>
+ <label> Preferred Buffer Time: </label>
+ <label>
+	<input type="radio" bind:group={buffer} value={0} />
+	0 Minutes
+</label>
+
+<label>
+	<input type="radio" bind:group={buffer} value={15} />
+	15 Minutes
+</label>
+
+<label>
+	<input type="radio" bind:group={buffer} value={30} />
+	30 Minutes
+</label>
+>>>>>>> buffers
 
   <Calendar />
 
@@ -26,6 +47,7 @@
 </main>
 
 <style>
+<<<<<<< HEAD
   .logo {
     height: 6em;
     padding: 1.5em;
@@ -38,6 +60,9 @@
   .logo.svelte:hover {
     filter: drop-shadow(0 0 2em #ff3e00aa);
   }
+=======
+
+>>>>>>> buffers
   .read-the-docs {
     color: #888;
   }
