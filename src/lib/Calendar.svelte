@@ -1,8 +1,9 @@
 <script>
     import Calendar from '@event-calendar/core';
     import TimeGrid from '@event-calendar/time-grid';
+    import Interaction from '@event-calendar/interaction'
 
-    let plugins = [TimeGrid];
+    let plugins = [TimeGrid, Interaction];
     let options = {
         view: 'timeGridWeek',
         selectable: 'true',
