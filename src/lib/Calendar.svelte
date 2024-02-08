@@ -11,7 +11,8 @@
 
     let options = {
         view: 'timeGridWeek',
-        selectable: 'true',
+        editable: true,
+        selectable: true,
         select: (info) => {
             const newEvent = {
                 start: info.start,
@@ -20,9 +21,6 @@
             ec.addEvent(newEvent);
         },
         events: events,
-        eventDragStop: (info) => {
-            ec.addEvent(info.event);
-        },
     };
 </script>
 
