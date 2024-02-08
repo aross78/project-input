@@ -1,5 +1,4 @@
 <script>
-  import Counter from './lib/Counter.svelte'
   import Calendar from './lib/Calendar.svelte'
   import Output from './lib/Output.svelte'
 
@@ -43,7 +42,6 @@
   <div style= "float:right;">
     <h2 style = "color:cadetblue"> Group Availability</h2>
     <Output />
-    <Counter />
   </div>
 
 </main>
