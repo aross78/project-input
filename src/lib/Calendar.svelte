@@ -2,6 +2,8 @@
     import Calendar from '@event-calendar/core';
     import TimeGrid from '@event-calendar/time-grid';
     import Interaction from '@event-calendar/interaction'
+
+    export let buff = 0;
     
     let ec;
     let plugins = [TimeGrid, Interaction];
@@ -23,8 +25,12 @@
         selectable: true,
         select: (info) => {
             let newEvent = info;
-            newEvent.title = 'Busy';
+            newEvent.extendedProps = {
+                buffer: buff,
+            };
+            newEvent.title = {html: '<b>Busy</b><br>Buffer:' + newEvent.extendedProps.buffer};
             newEvent.textColor = '#f0d1db';
+            
             ec.addEvent(info);
             ec.unselect();
         },

@@ -33,7 +33,7 @@
 	<input type="radio" bind:group={buffer} value={30} />
 	30 Minutes
 </label>
-  <Calendar />
+  <Calendar buff={buffer}/>
 
   </div>
 
