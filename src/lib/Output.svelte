@@ -6,6 +6,7 @@
     let options = {
         view: 'timeGridWeek',
         selectable: 'true',
+        
         slotMinTime: '08:00:00',
         slotMaxTime: '17:00:00',
         events: [

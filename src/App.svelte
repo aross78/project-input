@@ -12,6 +12,9 @@
 </head>
 
 <main>
+  <a href="https://github.com/aross78/project-input">
+    <img src="src\assets\harvard_time_logo.png" class="logo" alt="Harvard Time Logo" />
+  </a> 
  <h1> WhenNOTToMeet</h1>
  <div style = "width:45%; height: 30%; float:left;">
   <h2 style = "color:cadetblue"> Mark When You are Busy</h2>
