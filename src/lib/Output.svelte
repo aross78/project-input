@@ -9,6 +9,7 @@
     ];
 
     let options = {
+        allDaySlot: false,
         view: 'timeGridWeek',
         events: events,
         slotMinTime: '08:00:00',
@@ -21,5 +22,11 @@
         options.slotDuration = '01:00';
     }
 </script>
+
+<style>
+    .ec {
+        --ec-bg-fallback-color: green;
+    }
+</style>
 
 <Calendar {plugins} {options} />

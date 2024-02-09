@@ -10,6 +10,7 @@
     ];
 
     let options = {
+        allDaySlot: false,
         view: 'timeGridWeek',
         events: events,
         eventColor: '#942248',
