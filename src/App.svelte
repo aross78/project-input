@@ -37,8 +37,8 @@
 
   <div style= "float:right;">
     <h3 style = "color:cadetblue"> Group Availability</h3>
+    <br />
     <Output />
-    <Counter />
   </div>
 
 </main>
