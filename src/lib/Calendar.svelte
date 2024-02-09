@@ -2,43 +2,39 @@
     import Calendar from '@event-calendar/core';
     import TimeGrid from '@event-calendar/time-grid';
     import Interaction from '@event-calendar/interaction'
+
+    export let buff = 0;
     
     let ec;
     let plugins = [TimeGrid, Interaction];
-    let events = [
+    export let events = [
         // initial list of events
     ];
 
     let options = {
+        allDaySlot: false,
         view: 'timeGridWeek',
-<<<<<<< HEAD
-=======
+        events: events,
+        eventColor: '#942248',
+        eventClick: (info) => {
+            ec.removeEventById(info.event.id)
+        },
         slotMinTime: '08:00:00',
         slotMaxTime: '17:00:00',
-       // allDay: false,
->>>>>>> 530eb85fa70cc52dd93bb650b401399805db7421
+        editable: true,
         selectable: true,
         select: (info) => {
-            const newEvent = {
-                start: info.start,
-                end: info.end,
+            let newEvent = info;
+            newEvent.extendedProps = {
+                buffer: buff,
             };
-            ec.addEvent(newEvent);
-        },
-        editable: true,
-<<<<<<< HEAD
-=======
-        backgroundColor : '#278a27',
->>>>>>> 530eb85fa70cc52dd93bb650b401399805db7421
-        events: events,
-        select: function (info) {
+            newEvent.title = {html: '<b>Busy</b><br>Buffer:' + newEvent.extendedProps.buffer};
+            newEvent.textColor = '#f0d1db';
+            
             ec.addEvent(info);
             ec.unselect();
-
-
-
         },
     };
 </script>
 
-<Calendar bind:this={ec} {plugins} {options} />
+<Calendar bind:this={ec} {plugins} {options} {events}/>
