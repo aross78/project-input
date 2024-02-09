@@ -3,7 +3,7 @@
   import Calendar from './lib/Calendar.svelte'
   import Output from './lib/Output.svelte'
 
-  let buffer = 1;
+  let buffer = 0;
 
 </script>
 

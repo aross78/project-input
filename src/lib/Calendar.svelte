@@ -2,19 +2,33 @@
     import Calendar from '@event-calendar/core';
     import TimeGrid from '@event-calendar/time-grid';
     import Interaction from '@event-calendar/interaction'
-
+    
+    let ec;
     let plugins = [TimeGrid, Interaction];
+    let events = [
+        // initial list of events
+    ];
+
     let options = {
         view: 'timeGridWeek',
-        selectable: 'true',
-        events: [
-            // your list of events
-        ]
-    };
+        selectable: true,
+        select: (info) => {
+            const newEvent = {
+                start: info.start,
+                end: info.end,
+            };
+            ec.addEvent(newEvent);
+        },
+        editable: true,
+        events: events,
+        select: function (info) {
+            ec.addEvent(info);
+            ec.unselect();
 
-    function updateOptions() {
-        options.slotDuration = '01:00';
-    }
+
+
+        },
+    };
 </script>
 
-<Calendar {plugins} {options} />
+<Calendar bind:this={ec} {plugins} {options} />
