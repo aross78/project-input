@@ -2,16 +2,19 @@
     import Calendar from '@event-calendar/core';
     import TimeGrid from '@event-calendar/time-grid';
 
+    let ec;
     let plugins = [TimeGrid];
+    let events = [
+        // initial list of events
+    ];
+
     let options = {
         view: 'timeGridWeek',
-        selectable: 'true',
-        
+        events: events,
         slotMinTime: '08:00:00',
         slotMaxTime: '17:00:00',
-        events: [
-            // your list of events
-        ]
+        editable: false,
+        selectable: false,
     };
 
     function updateOptions() {
