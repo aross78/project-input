@@ -11,7 +11,9 @@
 
     let options = {
         view: 'timeGridWeek',
-        editable: true,
+        slotMinTime: '08:00:00',
+        slotMaxTime: '17:00:00',
+       // allDay: false,
         selectable: true,
         select: (info) => {
             const newEvent = {
@@ -20,7 +22,16 @@
             };
             ec.addEvent(newEvent);
         },
+        editable: true,
+        backgroundColor : '#278a27',
         events: events,
+        select: function (info) {
+            ec.addEvent(info);
+            ec.unselect();
+
+
+
+        },
     };
 </script>
 

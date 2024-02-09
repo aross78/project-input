@@ -2,7 +2,7 @@
   import Calendar from './lib/Calendar.svelte'
   import Output from './lib/Output.svelte'
 
-  let buffer = 1;
+  let buffer = 0;
 
 </script>
 
@@ -12,13 +12,12 @@
 </head>
 
 <main>
-  <div>
-    <a href="https://github.com/aross78/project-input">
+ <a href="https://github.com/aross78/project-input">
       <img src="src\assets\harvard_time_logo.png" class="logo" alt="Harvard Time Logo" />
-    </a>
-  </div>
-  <h1>Harvard  Time</h1>
- <div style = "width:40%; height: 30%; float:left;">
+ </a>             
+ <h1>WhenNOTToMeet</h1>
+ <div style = "width:45%; height: 30%; float:left;">
+  <h2 style = "color:cadetblue;"> Input When You Are Busy</h2>
  <label> Preferred Buffer Time: </label>
  <label>
 	<input type="radio" bind:group={buffer} value={0} />
@@ -41,6 +40,7 @@
 
   <div style= "float:right;">
     <h2 style = "color:cadetblue"> Group Availability</h2>
+    <label> Buffer Time: {buffer}</label>
     <Output />
   </div>
 
