@@ -12,13 +12,18 @@
     let options = {
         view: 'timeGridWeek',
         events: events,
+        eventColor: '#942248',
+        eventClick: (info) => {
+            ec.removeEventById(info.event.id)
+        },
         slotMinTime: '08:00:00',
         slotMaxTime: '17:00:00',
         editable: true,
         selectable: true,
         select: (info) => {
             let newEvent = info;
-            newEvent.backgroundColor = '#942248'
+            newEvent.title = 'Busy';
+            newEvent.textColor = '#f0d1db';
             ec.addEvent(info);
             ec.unselect();
         },
