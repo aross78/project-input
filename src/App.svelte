@@ -13,13 +13,9 @@
 </head>
 
 <main>
-  <div>
-    <a href="https://github.com/aross78/project-input">
-      <img src="src\assets\harvard_time_logo.png" class="logo" alt="Harvard Time Logo" />
-    </a>
-  </div>
-  <h1>Harvard  Time</h1>
- <div style = "width:40%; height: 30%; float:left;">
+ <h1> WhenNOTToMeet</h1>
+ <div style = "width:45%; height: 30%; float:left;">
+  <h2 style = "color:cadetblue"> Mark When You are Busy</h2>
  <label> Preferred Buffer Time: </label>
  <label>
 	<input type="radio" bind:group={buffer} value={0} />
@@ -35,7 +31,6 @@
 	<input type="radio" bind:group={buffer} value={30} />
 	30 Minutes
 </label>
-
   <Calendar />
 
   </div>
