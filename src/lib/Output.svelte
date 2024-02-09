@@ -1,10 +1,10 @@
 <script>
     import Calendar from '@event-calendar/core';
     import TimeGrid from '@event-calendar/time-grid';
+   // import Calendar from './Calendar.svelte';
 
-    let ec;
     let plugins = [TimeGrid];
-    let events = [
+    export let events = [
         // initial list of events
     ];
 

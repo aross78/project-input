@@ -39,8 +39,8 @@
 
   <div style= "float:right;">
     <h2 style = "color:cadetblue"> Group Availability</h2>
-    <label> Buffer Time: {buffer}</label>
-    <Output />
+    <br>
+   <Output events={[]}/>
   </div>
 
 </main>

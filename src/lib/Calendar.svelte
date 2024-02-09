@@ -7,7 +7,7 @@
     
     let ec;
     let plugins = [TimeGrid, Interaction];
-    let events = [
+    export let events = [
         // initial list of events
     ];
 
@@ -37,4 +37,4 @@
     };
 </script>
 
-<Calendar bind:this={ec} {plugins} {options} />
+<Calendar bind:this={ec} {plugins} {options} {events}/>
