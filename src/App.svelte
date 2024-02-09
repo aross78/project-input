@@ -3,7 +3,7 @@
   import Calendar from './lib/Calendar.svelte'
   import Output from './lib/Output.svelte'
 
-  let buffer = 1;
+  let buffer = 0;
 
 </script>
 
@@ -37,8 +37,8 @@
 
   <div style= "float:right;">
     <h2 style = "color:cadetblue"> Group Availability</h2>
+    <br/>
     <Output />
-    <Counter />
   </div>
 
 </main>
