@@ -17,6 +17,8 @@
         editable: true,
         selectable: true,
         select: (info) => {
+            let newEvent = info;
+            newEvent.backgroundColor = '#942248'
             ec.addEvent(info);
             ec.unselect();
         },
