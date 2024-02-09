@@ -13,8 +13,9 @@
 </head>
 
 <main>
- <h1> Time Scheduler</h1>
+ <h1>WhenNOTToMeet</h1>
  <div style = "width:45%; height: 30%; float:left;">
+  <h2 style = "color:cadetblue;"> Input When You Are Busy</h2>
  <label> Preferred Buffer Time: </label>
  <label>
 	<input type="radio" bind:group={buffer} value={0} />
@@ -36,7 +37,7 @@
   </div>
 
   <div style= "float:right;">
-    <h3 style = "color:cadetblue"> Group Availability</h3>
+    <h2 style = "color:cadetblue"> Group Availability</h2>
     <br />
     <Output />
   </div>

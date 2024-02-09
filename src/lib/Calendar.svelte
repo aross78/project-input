@@ -20,6 +20,7 @@
             ec.addEvent(newEvent);
         },
         editable: true,
+        allDay: false,
         events: events,
         select: function (info) {
             ec.addEvent(info);
